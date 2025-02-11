@@ -8,7 +8,7 @@ async function saveData() {
             "task": task_n.value // it is used to get input entered values
         })
     }
-    let response = await fetch("http://localhost:3000/time-table", options);
+    let response = await fetch("https://dorian-wise-brother.glitch.me", options);
 
     if (response.ok) {
         task_n.value = '';
@@ -17,7 +17,7 @@ async function saveData() {
 }
 
 async function getData() {
-    let response = await fetch("http://localhost:3000/time-table");
+    let response = await fetch("https://dorian-wise-brother.glitch.me");
     let data = await response.json();
     displayData(data);
 }
@@ -38,7 +38,7 @@ async function deleteData(id) {
     let options = {
         "method": "DELETE"
     }
-    let response = await fetch(`http://localhost:3000/time-table/${id}`, options);
+    let response = await fetch(`https://dorian-wise-brother.glitch.me/${id}`, options);
     if (response.ok) {
         console.log("Deleted");
         getData();
@@ -47,7 +47,7 @@ async function deleteData(id) {
 
 
 async function deleteAllData() {
-    let response = await fetch("http://localhost:3000/time-table", { method: "GET" });
+    let response = await fetch("https://dorian-wise-brother.glitch.me", { method: "GET" });
     let data = await response.json();
     data.forEach(obj => deleteData(obj.id));
 }
