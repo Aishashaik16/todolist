@@ -1,0 +1,20 @@
+{
+  "time-table": [
+    {
+      "id": "8b24",
+      "task": "study"
+    },
+    {
+      "id": "a491",
+      "task": "lunch"
+    },
+    {
+      "id": "4f6c",
+      "task": "practice js"
+    },
+    {
+      "id": "721a",
+      "task": "play badminton"
+    }
+  ]
+}

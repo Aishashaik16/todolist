@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+       /* *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+       } */
+        .main {
+            background-color: pink;
+            width:30%;
+            text-align: center;
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        #container {
+            padding: 10px;
+            margin: 6px;
+            /* display: grid; */
+            /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+            gap: 10px;
+        }
+
+        #container>div {
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>Design Tasks</h1>
+        <input type="text" id="task_n" placeholder="Enter new task">
+        <button onclick="saveData()"><i class="bi bi-plus"></i></button>
+        <div id="container"></div>
+        <button style="background-color: white;border-radius: 10px;" onclick="deleteAllData()">Clear All</button>
+        <script src="./index.js"></script>
+    </div>
+</body>
+
+</html>
